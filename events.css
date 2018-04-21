@@ -1,0 +1,64 @@
+/*
+events gradient: Orange Fun
+
+background: #fc4a1a;  /* fallback for old browsers */
+
+/*background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+
+/*background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    background-color: antiquewhite;
+    margin: 1vw;
+    margin-top:3vw;
+    padding: 4vw;
+}
+
+section img {
+    width: 90vw;
+    padding-top: 3vw;
+}
+
+/*navigation*/
+
+nav.secondary {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+    background: #fc4a1a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*burger*/
+
+.burgerNav {width:70vw;
+height:50vh;
+background-color: antiquewhite;
+margin-top:20vh;
+margin-left:15vw;
+
+
+}
+
+.burgerNav a {width:100%;
+    display: block;
+
+}
