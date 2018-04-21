@@ -16,7 +16,7 @@ function showEvents(evt) {
     evt.forEach((e) => {
         let clone = template.cloneNode(true);
         let picPath = e.acf.event_picture.sizes.medium
-        let pList = 'http://ferrarigiada.com/kea/07-cms/wordpress/wp-json/wp/v2/events?id='
+        let pList = 'http://ferrarigiada.com/kea/07-cms/wordpress/wp-json/wp/v2/events?slug='
 
 
         console.log('im cloning')
@@ -40,16 +40,16 @@ function showEvents(evt) {
 
           clone.querySelector(".more").addEventListener('click', () => {
                 modal.classList.remove('hide');
-                fetch(pList + e.id).then(result => result.json()).then(productID => showModal(productID, clone))
+                fetch(pList + e.slug).then(result => result.json()).then(productID => showModal(productID, clone))
             });
 
         function showModal(p) {
             console.log(p)
-            /*
+
     modal.querySelector('h2').textContent = p.title.rendered;
 
     modal.querySelector('.contentMe').innerHTML = p.content.rendered
-    modal.addEventListener('click', () => modal.classList.add('hide'))*/
+    modal.addEventListener('click', () => modal.classList.add('hide'))
 }
 
 
@@ -98,6 +98,18 @@ function showEvents(evt) {
 
 
 fetchEvents()
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 document.querySelectorAll('.more').forEach((m)=>{m.addEventListener('click',(evt)=>{evt.target.classList.toggle('hide');
