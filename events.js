@@ -46,10 +46,11 @@ function showEvents(evt) {
         function showModal(p) {
             console.log(p)
 
-    modal.querySelector('h2').textContent = p.title.rendered;
+    modal.querySelector('h2').textContent = p[0].title.rendered;
 
-    modal.querySelector('.contentMe').innerHTML = p.content.rendered
+    modal.querySelector('.contentMe').innerHTML = p[0].content.rendered
     modal.addEventListener('click', () => modal.classList.add('hide'))
+    window.onscroll=()=>modal.classList.add('hide')
 }
 
 
